@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  resources :blogs
+
   devise_for :users, :controllers => { :registrations => "registrations" }
+  
   get 'index', to: 'static_pages#index'
   get 'about_the_firm', to: 'static_pages#about_the_firm'
   get 'partners', to: 'static_pages#partners'
