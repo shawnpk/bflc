@@ -4,7 +4,7 @@
 
 <small>Posted on: <%= @blog.created_at.strftime('%B %e, %Y') %></small>
 <p><%= @blog.body %></p>
-<p><%= link_to 'Edit', edit_blog_path(@blog) %></p>
+<p><%= link_to 'Edit Article', edit_blog_path(@blog) %></p>
 <p><%= link_to 'Delete', blog_path(@blog), method: :delete, data: { confirm: "Are you sure you want to delete #{@blog.title}?" } %></p>
 
 <p><%= link_to 'Back to All Posts', blogs_path %></p>

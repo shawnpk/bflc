@@ -215,7 +215,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Tax Services')
   end
 
-  it 'the Construction page' do
+  xit 'the Construction page' do
     visit root_path
 
     click_link 'Industries'
@@ -225,7 +225,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Construction')
   end
 
-  it 'the Craft Brewing page' do
+  xit 'the Craft Brewing page' do
     visit root_path
 
     click_link 'Industries'
@@ -235,7 +235,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Craft Brewing')
   end
 
-  it 'the Family Owned Businesses page' do
+  xit 'the Family Owned Businesses page' do
     visit root_path
 
     click_link 'Industries'
@@ -245,7 +245,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Family Owned Businesses')
   end
 
-  it 'the Franchise page' do
+  xit 'the Franchise page' do
     visit root_path
 
     click_link 'Industries'
@@ -255,7 +255,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Franchise')
   end
 
-  it 'the Healthcare page' do
+  xit 'the Healthcare page' do
     visit root_path
 
     click_link 'Industries'
@@ -265,7 +265,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Healthcare')
   end
 
-  it 'the High Net Worth Individuals page' do
+  xit 'the High Net Worth Individuals page' do
     visit root_path
 
     click_link 'Industries'
@@ -275,7 +275,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'High Net Worth Individuals')
   end
 
-  it 'the Law Firms page' do
+  xit 'the Law Firms page' do
     visit root_path
 
     click_link 'Industries'
@@ -285,7 +285,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Law Firms')
   end
 
-  it 'the Manufacturing and Distribution page' do
+  xit 'the Manufacturing and Distribution page' do
     visit root_path
 
     click_link 'Industries'
@@ -295,7 +295,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Manufacturing and Distribution')
   end
 
-  it 'the Not-For-Profit page' do
+  xit 'the Not-For-Profit page' do
     visit root_path
 
     click_link 'Industries'
@@ -305,7 +305,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Not-For-Profit')
   end
 
-  it 'the Real Estate page' do
+  xit 'the Real Estate page' do
     visit root_path
 
     click_link 'Industries'
@@ -315,7 +315,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Real Estate')
   end
 
-  it 'the Retail page' do
+  xit 'the Retail page' do
     visit root_path
 
     click_link 'Industries'
@@ -325,7 +325,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Retail')
   end
 
-  it 'the Service Firms page' do
+  xit 'the Service Firms page' do
     visit root_path
 
     click_link 'Industries'
@@ -335,7 +335,7 @@ describe 'Navigation can reach' do
     expect(page).to have_selector('h1', text: 'Service Firms')
   end
 
-  it 'the Technology page' do
+  xit 'the Technology page' do
     visit root_path
 
     click_link 'Industries'

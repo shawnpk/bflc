@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Blog' do
+describe 'Article' do
   let(:user) { FactoryGirl.create :user }
   let!(:blog) { FactoryGirl.create :blog }
 
@@ -22,10 +22,10 @@ describe 'Blog' do
 
     expect(current_path).to eq(blogs_path)
 
-    click_link 'New Blog'
+    click_link 'New Article'
     fill_in 'Title', with: blog.title
     fill_in 'Body', with: blog.body
-    click_button 'Create Blog'
+    click_button 'Create Article'
 
     expect(page).to have_content(blog.body)
   end
@@ -43,11 +43,11 @@ describe 'Blog' do
 
     expect(current_path).to eq(blog_path(blog))
 
-    click_link 'Edit'
-    fill_in 'Title', with: 'New Post'
-    click_button 'Update Blog'
+    click_link 'Edit Article'
+    fill_in 'Title', with: 'New Article'
+    click_button 'Update Article'
 
-    expect(page).to have_content('New Post')
+    expect(page).to have_content('New Article')
   end
 
   it 'can be destroyed' do
