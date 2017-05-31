@@ -1,25 +1,28 @@
 class StaticPagesController < ApplicationController
-  def index
-  end
+  include PartnersPagesConcern
+  include OurServicesConcern
 
   def about_the_firm
-  end
-
-  def partners
-  end
-
-  def our_services
-  end
-
-  def industries
   end
 
   def careers
   end
 
+  def contact_us
+  end
+
+  def index
+  end
+
+  def industries
+  end
+
   def knowledge_base
   end
 
-  def contact_us
+  def our_services
+  end
+
+  def partners
   end
 end

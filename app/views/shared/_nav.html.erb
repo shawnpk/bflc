@@ -1,0 +1,62 @@
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <%= link_to 'About the Firm', about_the_firm_path, class: 'nav-link' %>
+  </li>
+  <li class="nav-item dropdown">
+    <%= link_to 'Partners', partners_path, class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown', role: 'button', 'aria-haspopup': 'true', 'aria-expanded': 'false' %>
+    <div class="dropdown-menu">
+      <%= link_to 'Doug Beach', doug_beach_path, class: 'dropdown-item' %>
+      <%= link_to 'Gary Freeman', gary_freeman_path, class: 'dropdown-item' %>
+      <%= link_to 'Gene Lim', gene_lim_path, class: 'dropdown-item' %>
+      <%= link_to 'Steve Cleland', steve_cleland_path, class: 'dropdown-item' %>
+      <%= link_to 'Susan Lewis', susan_lewis_path, class: 'dropdown-item' %>
+    </div>
+  </li>
+
+  <li class="nav-item dropdown">
+    <%= link_to 'Our Services', partners_path, class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown', role: 'button', 'aria-haspopup': 'true', 'aria-expanded': 'false' %>
+    <div class="dropdown-menu">
+      <%= link_to 'Accounting and Assurance', accounting_assurance_path, class: 'dropdown-item' %>
+      <%= link_to 'Business Advisory', business_advisory_path, class: 'dropdown-item' %>
+      <%= link_to 'Complex Business Transaction', complex_business_transaction_path, class: 'dropdown-item' %>
+      <%= link_to 'Cost Segregation', cost_segregation_path, class: 'dropdown-item' %>
+      <%= link_to 'Estate Planning', estate_planning_path, class: 'dropdown-item' %>
+      <%= link_to 'Fraud Prevention', fraud_prevention_path, class: 'dropdown-item' %>
+      <%= link_to 'Mergers', mergers_path, class: 'dropdown-item' %>
+      <%= link_to 'Starting a Business', starting_a_business_path, class: 'dropdown-item' %>
+      <%= link_to 'Strategic Planning', strategic_planning_path, class: 'dropdown-item' %>
+      <%= link_to 'Succession', succession_path, class: 'dropdown-item' %>
+      <%= link_to 'Tax Services', tax_services_path, class: 'dropdown-item' %>
+    </div>
+  </li>
+
+  <li class="nav-item dropdown">
+    <%= link_to 'Industries', partners_path, class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown', role: 'button', 'aria-haspopup': 'true', 'aria-expanded': 'false' %>
+    <div class="dropdown-menu">
+      <%= link_to 'industries', industries_path, class: 'dropdown-item' %>
+    </div>
+  </li>
+
+  <li class="nav-item">
+    <%= link_to 'Careers', careers_path, class: 'nav-link' %>
+  </li>
+
+  <li class="nav-item">
+    <%= link_to 'Knowledge Base', knowledge_base_path, class: 'nav-link' %>
+  </li>
+
+  <li class="nav-item">
+    <%= link_to 'Contact Us', contact_us_path, class: 'nav-link' %>
+  </li>
+
+  <% if current_user %>
+    <li class="nav-item dropdown">
+      <%= link_to 'Settings', nil, class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown', role: 'button', 'aria-haspopup': 'true', 'aria-expanded': 'false' %>
+      <div class="dropdown-menu">
+        <%= link_to 'Edit', edit_user_registration_path, class: 'nav-link' %>
+        <div class="dropdown-divider"></div>
+        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link red' %>
+      </div>
+    </li>
+  <% end %>
+</ul>

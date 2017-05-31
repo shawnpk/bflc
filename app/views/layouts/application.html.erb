@@ -22,9 +22,7 @@
       <% end %>
     </div>
 
-    <% if current_user %>
-      <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
-    <% end %>
+    <%= render 'shared/nav' %>
 
     <%= yield %>
   </body>
