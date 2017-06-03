@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>BFLC</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -16,13 +19,13 @@
   </head>
 
   <body>
+    <%= render 'shared/nav' %>
+    
     <div id="flash">
       <% flash.each do |key, value| %>
         <div class="flash <%= key %>"><%= value %></div>
       <% end %>
     </div>
-
-    <%= render 'shared/nav' %>
 
     <%= yield %>
   </body>
