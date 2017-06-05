@@ -4,6 +4,10 @@ body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
 }
 
+#flash {
+  margin-top: 6rem;
+}
+
 .navbar {
   margin-bottom: 0;
 }
@@ -130,21 +134,21 @@ body {
   }
 }
 
-// .map-responsive {
-//   overflow:hidden;
-//   padding-bottom:26.25%;
-//   position:relative;
-//   height:0;
-//   margin-top: 7rem;
-// }
-//
-// .map-responsive iframe {
-//   left:0;
-//   top:0;
-//   height:100%;
-//   width:100%;
-//   position:absolute;
-// }
+.map-responsive {
+  overflow:hidden;
+  padding-bottom:26.25%;
+  position:relative;
+  height:0;
+  margin-top: 7rem;
+}
+
+.map-responsive iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
 
 footer {
   padding-top: 3rem;
