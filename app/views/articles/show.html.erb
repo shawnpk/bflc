@@ -1,0 +1,14 @@
+<div class="articles-margin">
+  <h1><%= @article.title %></h1>
+
+  <hr>
+
+  <small>Authored on: <%= @article.created_at.strftime('%B %e, %Y') %></small>
+  <br>
+  <small>by: <strong><%= current_user.name %></strong></small>
+  <p><%= @article.body %></p>
+  <p><%= link_to 'Edit Article', edit_article_path(@article) %></p>
+  <p><%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: "Are you sure you want to delete #{@article.title}?" } %></p>
+
+  <p><%= link_to 'Back to All Articles', articles_path %></p>
+</div>

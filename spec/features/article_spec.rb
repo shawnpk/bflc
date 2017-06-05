@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'Article' do
   let(:user) { FactoryGirl.create :user }
-  let!(:blog) { FactoryGirl.create :blog }
+  let!(:article) { FactoryGirl.create :article }
 
   it 'show all articles on index page' do
     visit new_user_session_path
@@ -10,8 +10,8 @@ describe 'Article' do
     fill_in 'Password', with: user.password
     click_button 'Log in'
 
-    expect(current_path).to eq(blogs_path)
-    expect(page).to have_content(blog.title)
+    expect(current_path).to eq(articles_path)
+    expect(page).to have_content(article.title)
   end
 
   it 'can be created' do
@@ -20,14 +20,14 @@ describe 'Article' do
     fill_in 'Password', with: user.password
     click_button 'Log in'
 
-    expect(current_path).to eq(blogs_path)
+    expect(current_path).to eq(articles_path)
 
     click_link 'New Article'
-    fill_in 'Title', with: blog.title
-    fill_in 'Body', with: blog.body
+    fill_in 'Title', with: article.title
+    fill_in 'Content', with: article.body
     click_button 'Create Article'
 
-    expect(page).to have_content(blog.body)
+    expect(page).to have_content(article.body)
   end
 
   it 'can be edited' do
@@ -36,12 +36,12 @@ describe 'Article' do
     fill_in 'Password', with: user.password
     click_button 'Log in'
 
-    expect(current_path).to eq(blogs_path)
-    expect(page).to have_content(blog.title)
+    expect(current_path).to eq(articles_path)
+    expect(page).to have_content(article.title)
 
-    click_link blog.title
+    click_link article.title
 
-    expect(current_path).to eq(blog_path(blog))
+    expect(current_path).to eq(article_path(article))
 
     click_link 'Edit Article'
     fill_in 'Title', with: 'New Article'
@@ -56,16 +56,16 @@ describe 'Article' do
     fill_in 'Password', with: user.password
     click_button 'Log in'
 
-    expect(current_path).to eq(blogs_path)
-    expect(page).to have_content(blog.title)
+    expect(current_path).to eq(articles_path)
+    expect(page).to have_content(article.title)
 
-    click_link blog.title
+    click_link article.title
 
-    expect(current_path).to eq(blog_path(blog))
+    expect(current_path).to eq(article_path(article))
 
     click_link 'Delete'
 
-    expect(current_path).to eq(blogs_path)
-    expect(page).not_to have_content(blog.body)
+    expect(current_path).to eq(articles_path)
+    expect(page).not_to have_content(article.body)
   end
 end

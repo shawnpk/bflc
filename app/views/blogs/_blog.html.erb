@@ -1,8 +1,0 @@
-<tr>
-  <td><%= link_to blog.title, blog %></td>
-  <td>Published <%= blog.created_at.strftime('%B %-e, %Y') %></td>
-  <td><%= blog.body %></td>
-  <td><%= link_to 'Show', blog %></td>
-  <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-  <td><%= link_to 'Delete', blog, method: :delete, data: { confirm: "Are you sure you want to delete #{blog.title}?" } %></td>
-</tr>
