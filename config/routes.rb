@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'industries',                     to: 'static_pages#industries'
   get 'careers',                        to: 'static_pages#careers'
   get 'knowledge_base',                 to: 'static_pages#knowledge_base'
-  get 'contact_us',                     to: 'static_pages#contact_us'
+  # get 'contact_us',                     to: 'static_pages#contact_us'
 
   get 'doug_beach',                     to: 'static_pages#doug_beach'
   get 'gary_freeman',                   to: 'static_pages#gary_freeman'
@@ -43,6 +43,9 @@ Rails.application.routes.draw do
   get 'retail',                         to: 'static_pages#retail'
   get 'service_firms',                  to: 'static_pages#service_firms'
   get 'technology',                     to: 'static_pages#technology'
+
+  get 'contact_us',                     to: 'messages#new', as: 'new_message'
+  post 'contact_us',                     to: 'messages#create', as: 'create_message'
 
   root 'static_pages#index'
 end

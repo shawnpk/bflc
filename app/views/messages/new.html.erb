@@ -20,20 +20,28 @@
 
       <p class='text-muted'><h5>email:</h5> <%= link_to "ContactUs@bflc.com", 'mailto:contactus@bflc.com?Subject=Email from BFLC website contact us page' %></p>
     </div>
+
     <div class="col-md-7 offset-md-1">
-      <p>Do you have a question, comment, suggestion or news tip to pass along to BFLC? If you have a question or comment, please fill out the short form below.</p>
+      <p class='text-muted'>Do you have a question, comment, suggestion or news tip to pass along to BFLC? If you have a question or comment, please fill out the short form below.</p>
 
       <br>
 
-        <%= form_for @message, url: url_for(controller: 'messages_controller', action: 'new') do |f| %>
-          <%= notice %>
-          <%= @message.errors.full_messages.join(', ') %>
+        <%= form_for @message, url: create_message_url do |f| %>
+            <%= notice %>
+            <%= @message.errors.full_messages.join(', ') %>
 
-          <%= f.text_field :name, placeholder: 'name', class: 'form-control' %>
-          <%= f.text_field :email, placeholder: 'email', class: 'form-control' %>
-          <%= f.text_area :body, placeholder: 'message', class: 'form-control' %>
-
-          <%= f.submit 'Send', class: 'btn btn-info btn-block' %>
+          <div class='form-group'>
+            <%= f.text_field :name, placeholder: 'name', class: 'form-control' %>
+          </div>
+          <div class='form-group'>
+            <%= f.text_field :email, placeholder: 'email', class: 'form-control' %>
+          </div>
+          <div class='form-group'>
+            <%= f.text_area :body, placeholder: 'message', class: 'form-control', rows: 15 %>
+          </div>
+          <div class="form-group">
+            <%= f.submit 'Send', class: 'btn btn-info btn-block' %>
+          </div>
         <% end %>
     </div>
   </div>

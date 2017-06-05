@@ -4,7 +4,7 @@
     <h1 class="jumbotron-heading">Beach Freeman Lim &amp; Cleland LLP</h1>
     <p class="lead justify">At BFLC our goal is to lead you to financial success. We value our client relationships because knowing you and your business can help us anticipate your needs. This also enables us to solve problems before they become major issues, and assist you in eliminating poor practices before they become habits. To achieve this, we want to develop a collaborative client relationship, work closely with you and meet at a minimum on a quarterly basis (even if it appears there are no issues to discuss).</p>
     <p>
-      <%= link_to "Reach Out", contact_us_path, class: 'btn btn-primary' %>
+      <%= link_to "Reach Out", new_message_path, class: 'btn btn-primary' %>
     </p>
   </div>
 </section>
@@ -46,7 +46,7 @@
   </div>
 </div>
 
-<!-- <div class="blue-background">
+<div class="blue-background">
   <p class='lead partners-text justify'>The Partners of BFLC joined together from larger firms in order to provide our clients with the very best personalized, hands-on service. At many accounting firms, your primary contact will be a manager or maybe even a senior accountant. The partners at BFLC want to be your primary contact to give our clients the attention they expect and deserve. We approach client needs as a firm providing you with the varying expertise and experience of all of our partners. As a result, we are able to offer innovative solutions and ideas from multiple perspectives to provide you with the very best answers and suggestions. Ultimately, your business is our business. Our services offer expertise that enables our clients to better realize their financial goals. If you don't succeed, neither do we.</p>
 </div>
 
@@ -56,30 +56,30 @@
       <div class="col-lg-4">
         <div class="card">
           <%#= image_tag "store_fronts", class: 'card-img-top img-fluid' %>
-          <%#= fa_icon "ban", class: 'card-img-top img-fluid text-center fa-5x'  %>
+          <%= fa_icon "ban", class: 'card-img-top img-fluid text-center fa-5x'  %>
           <div class="card-block">
             <p class="card-text justify">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur irure dolor in reprehenderit.</p>
-            <%#= link_to "Fraud Prevention", root_path, class: 'btn btn-info purple-button btn-block' %>
+            <%= link_to "Fraud Prevention", root_path, class: 'btn btn-info purple-button btn-block' %>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card">
           <%#= image_tag fa_icon 'camera-retro', class: 'card-img-top img-fluid' %>
-          <%#= fa_icon "newspaper-o", class: 'card-img-top img-fluid text-center fa-5x'  %>
+          <%= fa_icon "newspaper-o", class: 'card-img-top img-fluid text-center fa-5x'  %>
           <div class="card-block">
             <p class="card-text justify">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur irure dolor in reprehenderit.</p>
-            <%#= link_to "BFLC Newsletters", root_path, class: 'btn btn-info turquoise-button btn-block' %>
+            <%= link_to "BFLC Newsletters", root_path, class: 'btn btn-info turquoise-button btn-block' %>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card">
           <%#= image_tag "tax_refund", class: 'card-img-top img-fluid' %>
-          <%#= fa_icon "usd", class: 'card-img-top img-fluid text-center fa-5x'  %>
+          <%= fa_icon "usd", class: 'card-img-top img-fluid text-center fa-5x'  %>
           <div class="card-block">
             <p class="card-text justify">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur irure dolor in reprehenderit.</p>
-            <%#= link_to 'Check Your Tax Refund', 'https://www.ftb.ca.gov/online/Refund/index.asp', class: 'btn btn-info dark-turquoise-button btn-block', target: '_blank' %>
+            <%= link_to 'Check Your Tax Refund', 'https://www.ftb.ca.gov/online/Refund/index.asp', class: 'btn btn-info dark-turquoise-button btn-block', target: '_blank' %>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@
   </div>
 </div>
 
-<footer class="text-muted">
+<!-- <footer class="text-muted">
   <div class="container">
     <p class="float-right">
       <a href="#">Back to top</a>
