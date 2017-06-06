@@ -7,6 +7,7 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.valid?
+      MessageMailer.contact_us(@message).deliver_now
       flash[:notice] = 'Email has been sent'
       redirect_to root_path
     else
