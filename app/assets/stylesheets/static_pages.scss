@@ -6,10 +6,6 @@
   background-color: white;
 }
 
-body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
-}
-
 .card {
   float: left;
   width: 100%;
@@ -39,28 +35,6 @@ body {
   }
 }
 
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-#flash {
-  margin-top: 6rem;
-}
-
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #f7f7f7;
-}
-
-footer p {
-  margin-bottom: .25rem;
-}
-
 .jumbotron {
   padding-top: 10rem;
   padding-bottom: 6rem;
@@ -88,10 +62,6 @@ footer p {
   // color: rgba(0, 0, 0, 0.5);
 }
 
-.justify {
-  text-align: justify;
-}
-
 .main-jumbotron {
   padding-top: 10rem;
   padding-bottom: 6rem;
@@ -104,10 +74,6 @@ footer p {
   background-repeat: no-repeat;
   color: white;
   border-radius: 0;
-}
-
-.navbar {
-  margin-bottom: 0;
 }
 
 .page-header {
@@ -123,10 +89,6 @@ footer p {
     border: 1px solid rgba(136, 160, 199, .75);
     // color: black;
   }
-}
-
-.red {
-  color: red;
 }
 
 .turquoise-button {

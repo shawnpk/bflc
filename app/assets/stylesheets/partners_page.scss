@@ -1,3 +1,30 @@
+.bottom-li {
+  margin-bottom: 1rem;
+}
+
+.communication h6,
+.communication p {
+    display: inline;
+    vertical-align: center;
+}
+
+.partner-image {
+  margin-top: 6rem;
+}
+
+.partner-information {
+  margin-top: 4rem;
+  vertical-align: middle;
+}
+
+.partner-li {
+  list-style: none;
+}
+
+.partner-name {
+  text-decoration: none !important;
+}
+
 .partners-jumbotron-index {
   background: image-url(cityscape);
   margin-bottom: 0;
@@ -27,5 +54,13 @@
   margin-bottom: 0px;
   background-position: 50%;
   color: white;
-  height: 400px;
+  // height: 400px;
+}
+
+.partners-telephone {
+  margin-bottom: 0;
+}
+
+.white-background {
+  background-color: white;
 }

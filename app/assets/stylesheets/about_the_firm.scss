@@ -1,0 +1,18 @@
+.youtube-video {
+position: relative;
+padding-bottom: 31%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+margin-left: 20%;
+}
+
+.youtube-video iframe,
+.youtube-video object,
+.youtube-video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 75%;
+height: 100%;
+}
