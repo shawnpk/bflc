@@ -1,4 +1,4 @@
-class MessageMailer < ApplicationMailer
+class MessageMailer < ApplicationMailer::Base
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
