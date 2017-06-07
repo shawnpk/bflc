@@ -1,4 +1,4 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded justify-content-center fixed-top">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded justify-content-center fixed-top navbar-opacity">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -59,8 +59,16 @@
         </div>
       </li>
 
-      <li class="nav-item">
-        <%= link_to 'Careers', careers_path, class: 'nav-link' %>
+      <!-- <li class="nav-item">
+        <%#= link_to 'Careers', careers_path, class: 'nav-link' %>
+      </li> -->
+
+      <li class="nav-item dropdown">
+        <%= link_to 'Careers', careers_path, class: 'nav-link dropdown-toggle', 'data-toggle': 'dropdown', role: 'button', 'aria-haspopup': 'true', 'aria-expanded': 'false' %>
+        <div class="dropdown-menu">
+          <%= link_to 'Why BFLC', why_bflc_path, class: 'dropdown-item' %>
+          <%= link_to 'Available Positions', available_positions_path, class: 'dropdown-item' %>
+        </div>
       </li>
 
       <li class="nav-item">

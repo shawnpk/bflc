@@ -44,8 +44,11 @@ Rails.application.routes.draw do
   get 'service_firms',                  to: 'static_pages#service_firms'
   get 'technology',                     to: 'static_pages#technology'
 
+  get 'why_bflc',                       to: 'static_pages#why_bflc'
+  get 'available_positions',            to: 'static_pages#available_positions'
+
   get 'contact_us',                     to: 'messages#new', as: 'new_message'
-  post 'contact_us',                     to: 'messages#create', as: 'create_message'
+  post 'contact_us',                    to: 'messages#create', as: 'create_message'
 
   root 'static_pages#index'
 end

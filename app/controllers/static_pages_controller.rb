@@ -2,6 +2,7 @@ class StaticPagesController < ApplicationController
   include PartnersPagesConcern
   include OurServicesConcern
   include IndustriesConcern
+  include CareersConcern
 
   def about_the_firm
   end
