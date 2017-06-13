@@ -21,13 +21,7 @@
   <body>
     <%= render 'shared/nav' %>
 
-    <% if flash.any? %>
-      <div id="flash">
-        <% flash.each do |key, value| %>
-          <div class="flash <%= key %>"><%= value %></div>
-        <% end %>
-      </div>
-    <% end %>
+    <%= flash_messages %>
 
     <%= yield %>
 

@@ -65,5 +65,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.3'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
-gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'wysiwyg-rails', '~> 2.6', '>= 2.6.1'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'sanitize', '~> 4.5'

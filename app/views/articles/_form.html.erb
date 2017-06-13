@@ -16,10 +16,20 @@
   </div>
 
   <div class="form-group">
-    <%= form.text_area :body, id: :article_body, class: 'form-control', placeholder: 'Content', rows: 15 %>
+    <%= form.text_area :body, id: :wysiwyg, class: 'form-control' %>
   </div>
 
   <div class="form-group">
     <%= form.submit button_text, class: 'btn btn-info' %>
   </div>
 <% end %>
+
+<script>
+$(function() {
+  $('#wysiwyg').froalaEditor({
+    toolbarInline: false,
+    heightMin: '400px',
+    toolbarButtons: ['paragraphFormat', 'bold', 'italic', 'underline', 'strikeThrough', '|', 'align', 'formatOL', 'formatUL', 'indent', 'outdent', '|', 'insertImage', 'insertLink', 'undo', 'redo'],
+  })
+});
+</script>
