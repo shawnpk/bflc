@@ -38,6 +38,10 @@
 @import 'about_the_firm';
 @import 'our_services';
 
+html, body {
+  min-height: 100%;
+}
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -50,14 +54,21 @@
   opacity: 0.95;
 }
 
-#flash {
-  margin-top: 6rem;
+.flash {
+  margin-top: 4.5rem;
+  margin-bottom: -4rem;
 }
+
+.clear { clear: both; height: 60px; }
 
 footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #f7f7f7;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin-top: 2rem;
 }
 
 footer p {

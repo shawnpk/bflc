@@ -4,8 +4,8 @@
   <br>
   <% if user_signed_in? %>
     <%#= link_to 'Show', article, class: 'btn btn-secondary' %>
-    <%= link_to 'Edit', edit_article_path(article), class: 'btn btn-warning' %>
-    <%= link_to 'Delete', article, method: :delete, data: { confirm: "Are you sure you want to delete the article '#{article.title}'?" }, class: 'btn btn-danger' %>
+    <%= link_to 'Edit', edit_article_path(article), class: 'btn btn-warning btn-sm' %>
+    <%= link_to 'Delete', article, method: :delete, data: { confirm: "Are you sure you want to delete the article '#{article.title}'?" }, class: 'btn btn-danger btn-sm' %>
   <% end %>
 </div>
 <hr>

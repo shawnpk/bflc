@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'our_services',                   to: 'static_pages#our_services'
   get 'industries',                     to: 'static_pages#industries'
   get 'careers',                        to: 'static_pages#careers'
-  get 'knowledge_base',                 to: 'static_pages#knowledge_base'
+  get 'knowledge_base',                 to: 'articles#index', as: 'knowledge_base'
   # get 'contact_us',                     to: 'static_pages#contact_us'
 
   get 'doug_beach',                     to: 'static_pages#doug_beach'

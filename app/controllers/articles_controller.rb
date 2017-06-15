@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @articles = Article.all.order('title asc')
+    @articles = Article.all.order('created_at desc')
   end
 
   def show
@@ -20,10 +20,10 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
 
     if @article.save
-      flash[:notice] = 'Your content has been created'
+      flash[:success] = 'Your content has been created'
       redirect_to @article
     else
-      flash[:alert] = 'There was a problem creating your content'
+      flash[:danger] = 'There was a problem creating your content'
       render :new
     end
   end
@@ -32,10 +32,10 @@ class ArticlesController < ApplicationController
     @article.update(article_params)
 
     if @article.save
-      flash[:notice] = 'Your content has been updated'
+      flash[:success] = 'Your content has been updated'
       redirect_to @article
     else
-      flash[:alert] = 'There was a problem updating your content'
+      flash[:danger] = 'There was a problem updating your content'
       render :edit
     end
   end
@@ -43,7 +43,7 @@ class ArticlesController < ApplicationController
   def destroy
     @article.destroy
 
-    flash[:notice] = "You have deleted #{@article.title}"
+    flash[:success] = "You have deleted #{@article.title}"
     redirect_to articles_path
   end
 
