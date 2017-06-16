@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="form-group">
+    <%= link_to 'Back', articles_path, class: 'btn btn-secondary btn-sm' %>
+    <%= form.submit button_text, class: 'btn btn-info btn-sm' %>
+  </div>
+
+  <div class="form-group">
     <%= form.text_field :title, id: :article_title, autofocus: true, class: 'form-control', placeholder: 'Title'  %>
   </div>
 
@@ -20,7 +25,8 @@
   </div>
 
   <div class="form-group">
-    <%= form.submit button_text, class: 'btn btn-info' %>
+    <%= link_to 'Back', articles_path, class: 'btn btn-secondary btn-sm' %>
+    <%= form.submit button_text, class: 'btn btn-info btn-sm' %>
   </div>
 <% end %>
 
