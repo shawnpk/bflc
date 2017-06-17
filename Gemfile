@@ -64,11 +64,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4.3'
 gem 'bootstrap', '~> 4.0.0.alpha6'
-gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+gem 'font-awesome-sass', '~> 4.7'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
-gem 'wysiwyg-rails', '~> 2.6', '>= 2.6.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'sanitize', '~> 4.5'
+gem 'wysiwyg-rails', '~> 2.6', '>= 2.6.1'
 gem 'capistrano', '~> 3.7', '>= 3.7.1'
 gem 'capistrano-rails', '~> 1.2'
 gem 'capistrano-passenger', '~> 0.2.0'
