@@ -25,5 +25,3 @@
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
-config/database.yml
-config/secrets.yml
